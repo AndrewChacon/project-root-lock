@@ -22,6 +22,22 @@
             }
           }
         ]
+      },
+      {
+        "id": "5d26cf5b4302b4a6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b0cff6b80944689",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -53,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#📅",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,12 +90,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "18b3f4f1ac70aec9",
@@ -169,8 +184,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "77a28a059ddf147a",
+  "active": "0b0cff6b80944689",
   "lastOpenFiles": [
-    "full-report.md"
+    "week-02/week-02-dasd.md",
+    "week-02/week-02-guide.md",
+    "week-01/week-01-guide.md",
+    "week-02/week-02-guide.md",
+    "week-02/week-02-guide.md",
+    "week-10/week-10-guide.md",
+    "week-09/week-09-guide.md",
+    "week-08/week-08-guide.md",
+    "week-07/week-07-guide.md",
+    "week-06/week-06-guide.md",
+    "week-05/week-05-guide.md",
+    "week-04/week-04-guide.md",
+    "week-03/week-03-guide.md",
+    "full-report.md",
+    "setup/rootlock-setup.sh"
   ]
 }
