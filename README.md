@@ -4,7 +4,7 @@
 > In this arena, *only the ruthless ascend*. You want to pass OSCP?  
 > Then you must become the **KEY** that unlocks every system... even if it means breaking the lock."
 
-— Jinpachi Ego, if he trained elite hackers
+— Jinpachi Ego, if he trained elite hackers.
 
 ---
 
