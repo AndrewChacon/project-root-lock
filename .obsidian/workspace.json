@@ -11,10 +11,14 @@
             "id": "b7afe256261013a0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "week-10/week-10-guide.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "week-10-guide"
             }
           }
         ]
@@ -74,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "18b3f4f1ac70aec9",
@@ -168,9 +171,9 @@
   "active": "b7afe256261013a0",
   "lastOpenFiles": [
     "week-09/week-09-guide.md",
+    "week-10/week-10-guide.md",
     "week-08/week-08-guide.md",
     "week-07/week-07-guide.md",
-    "week-10/week-10-guide.md",
     "week-06/week-06-guide.md",
     "week-04/week-04-guide.md",
     "week-05/week-05-guide.md",
