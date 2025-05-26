@@ -36,18 +36,18 @@ You will become the hacker they write reports about.
 
 ## 📆 Weekly Battlefield
 
-| Week | Tactical Focus                  | Assigned Machines                      |
-|------|----------------------------------|----------------------------------------|
-| 1    | Scanning & Enumeration          | Jerry, Lame, Bashed                    |
-| 2    | Service Enumeration + Shells    | Blue, Legacy, Optimum                 |
-| 3    | Linux Privilege Escalation      | Beep, Nibbles, Postman                |
-| 4    | Windows Privilege Escalation    | Bastion, Netmon, Arctic               |
-| 5    | Buffer Overflow Mastery         | Vulnserver, Brainpan                  |
-| 6    | Web Attacks I                   | Shocker, Nineveh, Traverxec          |
-| 7    | Web Attacks II                  | Writeup, Valentine, Curling          |
-| 8    | Active Directory Phase I        | Forest, Blackfield                    |
-| 9    | Active Directory Phase II       | Reel2, Sizzle                         |
-| 10   | Mock OSCP Exam                  | 3 Machines + BOF + Full Report        |
+| Week | Tactical Focus               | Assigned Machines              |
+| ---- | ---------------------------- | ------------------------------ |
+| 1    | Scanning & Enumeration       | Jerry, Lame, Bashed            |
+| 2    | Service Enumeration + Shells | Blue, Legacy, Optimum          |
+| 3    | Linux Privilege Escalation   | Beep, Nibbles, Postman         |
+| 4    | Windows Privilege Escalation | Bastion, Netmon, Arctic        |
+| 5    | Buffer Overflow Mastery      | Vulnserver, Brainpan           |
+| 6    | Web Attacks I                | Shocker, Nineveh, Traverxec    |
+| 7    | Web Attacks II               | Writeup, Valentine, Curling    |
+| 8    | Active Directory Phase I     | Forest, Blackfield             |
+| 9    | Active Directory Phase II    | Reel2, Sizzle                  |
+| 10   | Mock OSCP Exam               | 3 Machines + BOF + Full Report |
 
 ---
 

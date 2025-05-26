@@ -18,6 +18,7 @@
 - `dig`, `nslookup`, `whois` – DNS/OSINT
 
 --- 
+
 # 🗓️ Daily Breakdown
 
 --- 
@@ -164,7 +165,7 @@ nslookup example.com
 	- Commands memorized
 	- Challenges faced
 	- What to repeat/practice more
-- Update `ego-log.md` journal with your honest evaluation.
+- Update `study-log.md` journal with your honest evaluation.
 
 ## 🔚 End-of-Week Checklist
  - Scanned and documented 2+ machines with `nmap`
