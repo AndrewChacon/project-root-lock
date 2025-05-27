@@ -482,6 +482,23 @@ nmap --stats-every 2s TARGET_ADDR
 
 # 🧠 Understand These Concepts
 
+A TCP 3-way-handshake is how two hosts establish a reliable connection
+
+SYN -> the client says hey i wanna talk
+SYN-ACK -> the server says yeah lets do it
+ACK -> the client says great lets talk
+
+Every proper TCP connection starts this way
+
+Difference between `-sS`, `-sT`, `-sU`
+`sS` - SYN stealth scan, never completes the TCP handshake, most used
+`-sT` - TCP connect scan, full handshake, works without root
+`sU` - UDP scan, no handshake, services like DNS, SNMP, slow and noisy
+
+How does nmap discover hosts? 
+Its called a ping sweep, it doesn't scan ports just checks who's alive 
+Nmap might us, ICMP echo, TCP SYN, ARP, ICMP timestamp
+This is host discovery, not a port scan
 
 
 ---
@@ -489,3 +506,69 @@ nmap --stats-every 2s TARGET_ADDR
 # 🌐 Scanning Methodology
 
 https://medium.com/@mrummanhasan/scanning-methodology-a-practical-guide-1b0b7686fb89
+
+A quick end-to-end road-map of pentest activity using nmap
+
+## Methodology
+1. Look for live systems
+2. Check for open ports
+3. Banner grabbing
+4. Vulnerability scan
+5. Penetration test report
+
+## 1. Check For Live Systems
+We have to search for any systems that are alive in the scope of our target
+
+```bash
+nmap -sP TARGET_ADDR/24
+```
+
+Find as many hosts as you can
+
+## 2. Check For Open Ports
+Our next step is to port scan to get info on open ports running on the system
+
+```bash
+nmap TARGET_ADDR
+```
+
+## 3. Perform Banner Grabbing
+Banner grabbing is used to discover the type and version of software being used on ports running as services
+
+```bash
+nmap -sV TARGET_ADDR
+```
+
+Operating system detection
+
+```
+nmap -O TARGET_ADDR
+```
+
+An aggressive scan has OS detection, version detection and other services
+
+```bash
+nmap -A TARGET_ADDR
+```
+
+## 4. Vulnerability Scan
+Determine the vulnerability that exists in the host
+Preexisting scripts for nmap to run 
+
+```bash
+nmap --script vuln TARGET_ADDR
+```
+
+Find existing vulnerabilities from the CVE (common vulnerabilities and exploits)
+Search other vulnerability databases
+
+## 5. Penetration Testing Report
+We write down and report our findings to the client
+
+Summary: tasks accomplished, methodology used, high level findings and recommendations
+Scope Of Work: Include IP addresses tested, type of pentest ran.
+Details of Findings: count discovered risks, for each finding report the threat level, vulnerability rating, and impact
+Recommendations: show them solutions, mitigation's, suggestions for eliminating or reducing the vulnerability. 
+
+---
+

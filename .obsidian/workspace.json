@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week-01/week-01-notes.md",
+                "file": "study-log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "week-01-notes"
+              "title": "study-log"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week-01/mastering_nmap.md",
+                "file": "week-01/week-01-guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mastering_nmap"
+              "title": "week-01-guide"
             }
           },
           {
@@ -41,15 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "study-log.md",
+                "file": "week-01/week-01-notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "study-log"
+              "title": "week-01-notes"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -196,13 +197,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b7afe256261013a0",
+  "active": "76d2b6b8c1e3ee89",
   "lastOpenFiles": [
-    "week-01/week-01-guide.md",
-    "week-01/recon-cheatsheet.md",
-    "study-log.md",
-    "week-01/mastering_nmap.md",
     "week-01/week-01-notes.md",
+    "study-log.md",
+    "week-01/week-01-guide.md",
+    "week-01/mastering_nmap.md",
+    "week-01/recon-cheatsheet.md",
     "week-01/mastering_nmap.txt",
     "README.md",
     "cheatsheet.md",
