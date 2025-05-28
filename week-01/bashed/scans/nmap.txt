@@ -1,0 +1,13 @@
+nmap -T4 -p- -A 10.129.117.219
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-05-27 16:35 EDT
+Nmap scan report for 10.129.117.219
+Host is up (0.043s latency).
+Not shown: 65421 closed tcp ports (conn-refused), 113 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Arrexel's Development Site
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 49.27 seconds
