@@ -677,7 +677,7 @@ ffuf -u "http://target.com/page.php?FUZZ=test" -w params.txt
 
 Directory enumeration
 ```bash
-gobuster dir http://target.com -w wordlist.txt
+gobuster dir -u http://target.com -w wordlist.txt
 ```
 
 File extension brute force
@@ -687,7 +687,7 @@ gobuster dir -u http://target.com -w wordlist.txt -x php,html,txt
 
 Filtering extensions:
 ```bash
-gobuster dir http://target.com -w wordlist.txt -t --no-error
+gobuster dir -u http://target.com -w wordlist.txt -t --no-error
 ```
 
 Vhost/subdomain enumeration:
@@ -719,3 +719,223 @@ Analogy:
 --- 
 
 # SMB and Web Enumeration 
+
+What is SMB? 
+Service message block or SMB is a windows native protocol used for file sharing, printer access, and inter process communication
+It runs over port 139 for NetBIOS or port 445 for Direct SMB over TCP communication
+
+What is windows enumeration? 
+Actively gathering information from a system or service
+Finding open SMB shares which are shared folders or files
+checking if guest access is allowed
+list users, groups, and password policies
+Extracting config files, credentials, or secrets from shares
+
+SMB shares that are misconfigured can leak sensitive files or user logins 
+its a common foothold in real pentests and CTFs 
+
+Key concepts to know
+`shares` - public or private directories shared over SMB
+`anoonymous access` - access to shares without a login
+`user enumeration` list domain/workgroup users
+`password policies` - You may find info like lockout thresholds or password requirements
+
+If we see a 445 SMB port that first thing we want to know is what shares are available if any are present? 
+
+```php
+smbclient -L \\\\TARGET_IP\\
+```
+
+Enter a blank password, lists the shares available on the network
+Always check for anonymous access but if you have credentials use those too
+```php
+smbmap -H TARGET_IP
+```
+
+
+Using `crackmapexec` to check the user permissions on available shares
+```php
+crackmapexec smb TARGET_IP --shares
+```
+
+---
+
+## `enum4linux-pg` 
+
+A windows SMB enumeration tool, it automates various SMB info gathering techniques
+Helps in enumerating:
+- Users
+- Groups
+- Operating system info
+- Password policies
+- Domain/workgroup info
+
+Use it anytime you find ports 139 or 445 open on a target machine.
+
+```bash
+enum4linux-ng TARGET_IP
+```
+
+Common options:
+`-A` - all modules 
+`-u user` - set username
+`-p pass` - set password 
+`--no-pass` - skip password authentication
+`-o filename` - save output to a file
+`--json` - output in JSON
+
+How does it work? 
+Wraps multiple windows enumeration techniques: 
+- SMB client protocols 
+- NetBIOS queries
+- Share listing
+- User & Group SID resolution
+It functions like a multi-tool for windows enumeration
+
+Looking at Output
+Shares like `IPC$, ADMIN$, anonymous, public`
+Usernames like `Guest, Admininistrator, john`
+Policies such as min password length or lockout threshold 
+Machine info like OS version and workgroup info
+
+```bash
+enum4linux-ng 10.129.48.179 -oA enum4linux.txt
+```
+
+---
+
+## `smbclient`
+
+Is the Linux equivalent of windows explorer for SMB shares but its in the terminal 
+It lets you : 
+- List shared folders
+- Connect to shares
+- Browse files
+- Download/upload files
+Uses SMB/CIFS protocol 
+
+List all shares on a machine
+```php
+smbclient -L \\\\TARGET_IP\\
+```
+
+Add anonymous or credentialed access:
+```php
+smbclient -L \\\TARGET_IP\\ -N
+smbclient -L \\\TARGET_IP\\ -U username
+```
+`-N` - no password (anonymous login)
+`-U username` - with credentials
+
+Connect to a specific share
+```php
+smbclient \\\\TARGET_IP\\SHARE_NAME -N
+```
+
+Upon success you'll see a prompt like 
+
+```php
+smb: \>
+```
+
+Now you can browse the share like an FTP folder
+
+Common commands
+`ls` - lists files in the share
+`cd` - navigate the share
+`get file.txt` - download file to your local machine
+`put file.txt` - upload file from local to share if it is writable
+`exit,quit` - leave session
+
+Example of workflow:
+
+```php
+smbclient -L \\\\TARGET_IP\\ -N
+
+smbclient \\\\TARGET_IP\\anonymous -N
+
+smb: \> ls
+smb: \> cd secrets
+smb: \> get passwords.txt
+smb: \> exit
+```
+
+first we list all shares, connect to a share, with the `smbclient` shell we traverse the share and extract any sensitive info 
+
+What to look for:
+- human readable files like `creds.txt`
+- files like `.ini`, `.conf`, `.bak`
+- powershell scripts `.ps1`
+- `.zip`, `.7z`, `.rar`
+
+## `crackmapexec`
+
+CME or `crackmapexec` is a post exploit Swiss army knife for pentesters , it supports:
+- `SMB`, `RDP`, `MSSQL`, `WinRM`, `LDAP` enumeration 
+- Credential spraying and brute forcing 
+- Command execution on a Windows machine
+- Password hash dumping
+- Access share files or drop payloads
+
+Enumerate an SMB service
+```php
+crackmapexec smb TARGET_IP
+```
+
+Try a null session enumeration (no credentials)
+```php
+crackmapexec smb TARGET_IP -u '' -p ''
+```
+
+Enumerate shares
+```php
+crackmapexec smb TARGET_IP -u '' -p '' --shares
+```
+
+Execute a command (if credentials work)
+```php
+crackmapexec smb TARGET_IP -u admin -p 'password123' --exec-method smbexec -x "whoami"
+```
+
+--- 
+
+# Manual Banner Grabbing + OSINT
+
+The goal is to gather information about services, software versions, and domain info that can update find vulnerabilities - not in the exploit process yet.
+
+Mapping attack surface: services, software, who owns the domain, DNS infrastructure
+This recon is important for finding known vulnerabilities, planning future attacks, and you aren't scanning aggressively so you avoid detection.
+
+## Manual banner grabbing - service fingerprinting
+
+a banner is like a hello message from a service, when you connect it'll say something like:
+
+```php
+Hey, I’m Apache/2.4.29 running on Ubuntu!
+```
+
+You connect directly to a port and send the min input to get info back
+
+`nc TARGET_IP` - opens raw connection to HTTP port
+`telnet TARGET_IP` - opens raw connection to FTP port
+`curl -I TARGET_IP` - gets HTTP headers only
+
+You can get exact version numbers of web servers, FTP servers, etc
+These can be checked against exploit databases like Exploit-DB
+Some misconfigured servers leak sensitive info like internal IP's and directories
+
+## OSINT (Open Source Intelligence)
+
+Passive recon: gathering public data about a target domain or IP
+
+`whois` - shows domain registrant info 
+`dig` - DNS lookup - A records, MX, NS, subdomains
+`nslookup` - basic DNS resolution, confirms IPs/domains
+
+We learn who owns the domain/IP
+Find contact info
+Discover DNS misconfigurations or hidden subdomains
+gather infrastructure layout 
+
+--- 
+
