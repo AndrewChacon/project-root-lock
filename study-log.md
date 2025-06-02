@@ -32,3 +32,9 @@ Doing this recon stuff was pretty cool, I found 2 vulnerabilities on the Lame ma
 The first one is for was `vsFTPd 2.3.4` and the other was `OpenSSH_4.7.p1`. 
 I think if I get bored ill just jump the gun and try to root the Lame and Jerry machine. 
 The recon stuff is cool, I've used it before but I want to understand how it works under the hood, however It feels a lot like review. It's was lacking the intensity I wanted but I hope that's what I get in the following weeks to come.
+
+## Fri 30 May 2025
+
+## Sat 31 May 2025
+
+## Sun 1 June 2025

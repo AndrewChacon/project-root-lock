@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week-01/week-01-guide.md",
+                "file": "week-01/lame/lame-report.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "week-01-guide"
+              "title": "lame-report"
             }
           },
           {
@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "study-log.md",
+                "file": "week-01/week-01-guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "study-log"
+              "title": "week-01-guide"
             }
           },
           {
@@ -55,16 +55,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "htb-starting-point/08-synced/report.md",
+                "file": "plan of attack.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "report"
+              "title": "plan of attack"
+            }
+          },
+          {
+            "id": "389d329c2dd740f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "study-log.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "study-log"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,7 +134,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "18b3f4f1ac70aec9",
@@ -211,43 +225,42 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f656b73fbc77aa2a",
+  "active": "76d2b6b8c1e3ee89",
   "lastOpenFiles": [
-    "htb-starting-point/08-synced/flag.txt",
-    "htb-starting-point/08-synced/nmap.txt",
-    "htb-starting-point/07-mongod/report.md",
-    "htb-starting-point/08-synced/report.md",
-    "htb-starting-point/07-mongod/mongodb-linux-x86_64-ubuntu1604-3.6.23/bin/install_compass",
-    "htb-starting-point/07-mongod/mongodb-linux-x86_64-ubuntu1604-3.6.23/bin/mongo",
-    "htb-starting-point/07-mongod/mongodb-linux-x86_64-ubuntu1604-3.6.23/bin/mongos",
-    "htb-starting-point/07-mongod/mongodb-linux-x86_64-ubuntu1604-3.6.23/bin/mongod",
-    "htb-starting-point/07-mongod/mongodb-linux-x86_64-ubuntu1604-3.6.23/bin/mongoperf",
-    "htb-starting-point/07-mongod/mongodb-linux-x86_64-ubuntu1604-3.6.23/bin/mongoreplay",
-    "htb-starting-point/07-mongod/mongodb-linux-x86_64-ubuntu1604-3.6.23/bin/mongofiles",
-    "htb-starting-point/07-mongod/mongodb-linux-x86_64-ubuntu1604-3.6.23/bin/bsondump",
-    "htb-starting-point/07-mongod/mongodb-linux-x86_64-ubuntu1604-3.6.23/bin/mongotop",
-    "htb-starting-point/06-preignition/report.md",
-    "plan of attack.md",
-    "week-01/week-01-notes.md",
     "study-log.md",
+    "week-01/week-01-notes.md",
+    "plan of attack.md",
+    "week-01/week-01-guide.md",
+    "week-01/lame/lame-report.md",
+    "week-01/jerry/jerry-report.md",
+    "week-01/jerry/hduisoabng.jsp",
+    "week-01/jerry/WEB-INF/web.xml",
+    "week-01/jerry/WEB-INF",
+    "week-01/jerry/AAAAAAAAAAA.war",
+    "week-01/jerry/jszlodgg.jsp",
+    "week-01/jerry/payload.war",
+    "week-01/jerry/cmd.jsp/cmd.war",
+    "htb-starting-point/08-synced/report.md",
+    "week-01/jerry/cmd.jsp/cmd_readable.jsp",
+    "week-01/jerry/cmd.jsp/cmd.jsp",
+    "week-01/jerry/cmd.jsp/a.js",
+    "week-01/jerry/cmd.jsp/README.md",
+    "week-01/jerry/warsend/README.md",
+    "htb-starting-point/07-mongod/report.md",
+    "htb-starting-point/06-preignition/report.md",
     "htb-starting-point/05-explosion/report.md",
     "htb-starting-point/04-redeemer/report.md",
     "htb-starting-point/03-dancing/report.md",
     "htb-starting-point/02-fawn/report.md",
     "htb-starting-point/01-meow/report.md",
-    "week-01/week-01-guide.md",
-    "week-01/lame/lame-report.md",
     "week-01/bashed/bashed-report.md",
     "week-01/mastering_nmap.md",
     "week-01/recon-cheatsheet.md",
     "README.md",
     "cheatsheet.md",
     "full-report.md",
-    "week-01/jerry/jerry-report.md",
     "week-01/notes.md",
     "week-10/week-10-guide.md",
-    "week-09/week-09-guide.md",
-    "week-08/week-08-guide.md",
-    "week-07/week-07-guide.md"
+    "week-09/week-09-guide.md"
   ]
 }
