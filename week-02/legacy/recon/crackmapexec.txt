@@ -1,0 +1,1 @@
+SMB         10.129.227.181  445    LEGACY           [*] Windows 5.1 x32 (name:LEGACY) (domain:legacy) (signing:False) (SMBv1:True)

@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "76d2b6b8c1e3ee89",
+            "id": "ef6dfe4fa52faccd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week-01/jerry/jerry-report.md",
+                "file": "week-02/week-02-guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "jerry-report"
+              "title": "week-02-guide"
             }
           },
           {
@@ -27,26 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week-01/week-01-notes.md",
+                "file": "week-02/week-02-notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "week-01-notes"
-            }
-          },
-          {
-            "id": "ef6dfe4fa52faccd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "week-01/week-01-guide.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "week-01-guide"
+              "title": "week-02-notes"
             }
           },
           {
@@ -76,9 +62,23 @@
               "icon": "lucide-file",
               "title": "study-log"
             }
+          },
+          {
+            "id": "1f577afb3a720432",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "full-report.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "full-report"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -135,8 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "18b3f4f1ac70aec9",
@@ -228,22 +227,26 @@
   },
   "active": "389d329c2dd740f0",
   "lastOpenFiles": [
-    "week-01/jerry/war_payload/ddpcwbqmrwlg.jsp",
-    "week-01/jerry/war_payload/revshell.war",
-    "week-01/jerry/war_payload/WEB-INF/web.xml",
-    "week-01/jerry/war_payload/WEB-INF",
-    "week-01/jerry/war_payload/META-INF/MANIFEST.MF",
-    "week-01/jerry/war_payload/META-INF",
-    "week-01/jerry/war_payload",
-    "week-01/week-01-notes.md",
-    "week-01/week-01-guide.md",
     "plan of attack.md",
-    "week-01/jerry/jerry-report.md",
-    "week-01/jerry/ddpcwbqmrwlg.jsp",
-    "week-01/jerry/WEB-INF/web.xml",
-    "week-01/jerry/WEB-INF",
-    "week-01/jerry/META-INF/MANIFEST.MF",
     "study-log.md",
+    "week-02/week-02-guide.md",
+    "week-02/legacy/ms08_067/ms08_067_2018.py",
+    "week-02/legacy/ms08_067/README.md",
+    "week-02/legacy/ms08_067/LICENSE",
+    "week-02/legacy/ms08_067",
+    "week-02/week-02-notes.md",
+    "week-02/legacy/recon/crackmapexec.txt",
+    "week-02/legacy/recon/enum4linux.txt",
+    "week-02/legacy/recon",
+    "week-02/legacy/scans/nmap.txt",
+    "week-02/legacy/scans/smb_nmap.txt",
+    "week-02/legacy/scans",
+    "week-02/legacy/crackmapexec.txt",
+    "week-01/week-01-notes.md",
+    "week-02/Untitled.md",
+    "full-report.md",
+    "week-01/week-01-guide.md",
+    "week-01/jerry/jerry-report.md",
     "week-01/lame/lame-report.md",
     "htb-starting-point/08-synced/report.md",
     "week-01/jerry/cmd.jsp/README.md",
@@ -258,11 +261,6 @@
     "week-01/bashed/bashed-report.md",
     "week-01/mastering_nmap.md",
     "week-01/recon-cheatsheet.md",
-    "README.md",
-    "cheatsheet.md",
-    "full-report.md",
-    "week-01/notes.md",
-    "week-10/week-10-guide.md",
-    "week-09/week-09-guide.md"
+    "README.md"
   ]
 }

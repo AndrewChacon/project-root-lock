@@ -49,4 +49,6 @@ Week 1 was for sure was interesting, I found a lot of value going deeper into th
 # Week 2
 
 ## Mon 2 June 2025
+Today was good, I didn't mean to root the legacy machine today but I did, I wrote the report too. I did do it with metasploit using two different attack points. I tried to do manual exploit but I'm running to into issues since its an old python script. I'll try again later but if anything I have till Sunday to make that up. I stayed up all night I just couldn't sleep so I did my cyber learning first thing in the morning. Maybe ill do tier 1 of starting point machines tonight for extra practice after I've gotten a break from the grind. 
 
+## Tue 3 June 2025

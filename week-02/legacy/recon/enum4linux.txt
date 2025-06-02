@@ -1,0 +1,132 @@
+[92mENUM4LINUX - next generation (v1.3.4)[0m
+
+ ==========================
+|    Target Information    |
+ ==========================
+[94m[*] Target ........... 10.129.227.181[0m
+[94m[*] Username ......... ''[0m
+[94m[*] Random Username .. 'juwrvvpu'[0m
+[94m[*] Password ......... ''[0m
+[94m[*] Timeout .......... 5 second(s)[0m
+
+ =======================================
+|    Listener Scan on 10.129.227.181    |
+ =======================================
+[94m[*] Checking LDAP[0m
+[91m[-] Could not connect to LDAP on 389/tcp: connection refused[0m
+[94m[*] Checking LDAPS[0m
+[91m[-] Could not connect to LDAPS on 636/tcp: connection refused[0m
+[94m[*] Checking SMB[0m
+[92m[+] SMB is accessible on 445/tcp[0m
+[94m[*] Checking SMB over NetBIOS[0m
+[92m[+] SMB over NetBIOS is accessible on 139/tcp[0m
+
+ =============================================================
+|    NetBIOS Names and Workgroup/Domain for 10.129.227.181    |
+ =============================================================
+[92m[+] Got domain/workgroup name: HTB[0m
+[92m[+] Full NetBIOS names information:
+- LEGACY          <00> -         B <ACTIVE>  Workstation Service
+- LEGACY          <20> -         B <ACTIVE>  File Server Service
+- HTB             <00> - <GROUP> B <ACTIVE>  Domain/Workgroup Name
+- HTB             <1e> - <GROUP> B <ACTIVE>  Browser Service Elections
+- HTB             <1d> -         B <ACTIVE>  Master Browser
+- ..__MSBROWSE__. <01> - <GROUP> B <ACTIVE>  Master Browser
+- MAC Address = 00-50-56-B0-71-1F[0m
+
+ ===========================================
+|    SMB Dialect Check on 10.129.227.181    |
+ ===========================================
+[94m[*] Trying on 445/tcp[0m
+[92m[+] Supported dialects and settings:
+Supported dialects:
+  SMB 1.0: true
+  SMB 2.02: false
+  SMB 2.1: false
+  SMB 3.0: false
+  SMB 3.1.1: false
+Preferred dialect: SMB 1.0
+SMB1 only: true
+SMB signing required: false[0m
+[94m[*] Enforcing legacy SMBv1 for further enumeration[0m
+
+ =============================================================
+|    Domain Information via SMB session for 10.129.227.181    |
+ =============================================================
+[94m[*] Enumerating via unauthenticated SMB session on 445/tcp[0m
+[92m[+] Found domain information via SMB
+NetBIOS computer name: LEGACY
+NetBIOS domain name: ''
+DNS domain: legacy
+FQDN: legacy
+Derived membership: workgroup member
+Derived domain: unknown[0m
+
+ ===========================================
+|    RPC Session Check on 10.129.227.181    |
+ ===========================================
+[94m[*] Check for null session[0m
+[92m[+] Server allows session using username '', password ''[0m
+[94m[*] Check for random user[0m
+[91m[-] Could not establish random user session: STATUS_LOGON_FAILURE[0m
+
+ =====================================================
+|    Domain Information via RPC for 10.129.227.181    |
+ =====================================================
+[91m[-] Could not get domain information via 'lsaquery': STATUS_ACCESS_DENIED[0m
+
+ =================================================
+|    OS Information via RPC for 10.129.227.181    |
+ =================================================
+[94m[*] Enumerating via unauthenticated SMB session on 445/tcp[0m
+[92m[+] Found OS information via SMB[0m
+[94m[*] Enumerating via 'srvinfo'[0m
+[91m[-] Could not get OS info via 'srvinfo': STATUS_ACCESS_DENIED[0m
+[92m[+] After merging OS information we have the following result:
+OS: Windows 5.1
+OS version: '5.1'
+OS release: not supported
+OS build: not supported
+Native OS: Windows 5.1
+Native LAN manager: Windows 2000 LAN Manager
+Platform id: null
+Server type: null
+Server type string: null[0m
+
+ =======================================
+|    Users via RPC on 10.129.227.181    |
+ =======================================
+[94m[*] Enumerating users via 'querydispinfo'[0m
+[91m[-] Could not find users via 'querydispinfo': STATUS_ACCESS_DENIED[0m
+[94m[*] Enumerating users via 'enumdomusers'[0m
+[91m[-] Could not find users via 'enumdomusers': STATUS_ACCESS_DENIED[0m
+
+ ========================================
+|    Groups via RPC on 10.129.227.181    |
+ ========================================
+[94m[*] Enumerating local groups[0m
+[91m[-] Could not get groups via 'enumalsgroups domain': STATUS_ACCESS_DENIED[0m
+[94m[*] Enumerating builtin groups[0m
+[91m[-] Could not get groups via 'enumalsgroups builtin': STATUS_ACCESS_DENIED[0m
+[94m[*] Enumerating domain groups[0m
+[91m[-] Could not get groups via 'enumdomgroups': STATUS_ACCESS_DENIED[0m
+
+ ========================================
+|    Shares via RPC on 10.129.227.181    |
+ ========================================
+[91m[-] Could not list shares: STATUS_ACCESS_DENIED[0m
+
+ ===========================================
+|    Policies via RPC for 10.129.227.181    |
+ ===========================================
+[94m[*] Trying port 445/tcp[0m
+[91m[-] SMB connection error on port 445/tcp: STATUS_ACCESS_DENIED[0m
+[94m[*] Trying port 139/tcp[0m
+[91m[-] SMB connection error on port 139/tcp: session failed[0m
+
+ ===========================================
+|    Printers via RPC for 10.129.227.181    |
+ ===========================================
+[92m[+] No printers returned (this is not an error)[0m
+
+Completed after 25.39 seconds
