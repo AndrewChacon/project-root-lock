@@ -34,7 +34,19 @@ I think if I get bored ill just jump the gun and try to root the Lame and Jerry 
 The recon stuff is cool, I've used it before but I want to understand how it works under the hood, however It feels a lot like review. It's was lacking the intensity I wanted but I hope that's what I get in the following weeks to come.
 
 ## Fri 30 May 2025
+Today I had a huge hold back on the Jerry machine, the guide I followed had a requirement of running python 3.7 and I just couldn't get it to work right. The same for trying to use the metasploit option It just wasn't working too well for me. I know this should work but its just not I think its something with the VPN again, I have Sunday to recover. 
 
 ## Sat 31 May 2025
+Same issue today but with the Lame machine, its again another issue with the `msfvenom` payload, but also the manual route was giving me errors.
+After some work I realized I failed to use my `inet` IP from the secret tunnel from the VPN. 
+Now thinking about it I think this is also the same issue with the Jerry machine.
+I feel so miserable and frustrated about this stupid issue, Sunday has become my holy grail I know what needs to be done now tomorrow will be a piece of cake.
 
 ## Sun 1 June 2025
+Wow its already June, actually fuck my life lol. I was totally right about the secret tunnel, my reverse shells started working again and I was able to gain remote command execution on both machines. I had a pretty good start on those reports so today was like clean up duty. I'll ask Justin tomorrow for any advice/resources on writing reports better, need to know what the industry standards for them look like. I don't even want to look at what week 2 is gonna be about. I don't think I have work tomorrow so lets get week 2 day 1 over with quick and work on tier 1 of starting point HTB machines. 
+Week 1 was for sure was interesting, I found a lot of value going deeper into the fundamentals, I believe that's why I was able to debug all my errors. 
+
+# Week 2
+
+## Mon 2 June 2025
+
