@@ -3,7 +3,8 @@
 "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
 "http://java.sun.com/dtd/web-app_2_3.dtd">
 <web-app>
-  <welcome-file-list>
-    <welcome-file>hduisoabng.jsp</welcome-file>
-  </welcome-file-list>
+<servlet>
+<servlet-name>ndweobdlvfowcmh</servlet-name>
+<jsp-file>/ddpcwbqmrwlg.jsp</jsp-file>
+</servlet>
 </web-app>

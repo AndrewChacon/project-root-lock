@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week-01/lame/lame-report.md",
+                "file": "week-01/jerry/jerry-report.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "lame-report"
+              "title": "jerry-report"
             }
           },
           {
@@ -77,7 +77,8 @@
               "title": "study-log"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -225,25 +226,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "76d2b6b8c1e3ee89",
+  "active": "389d329c2dd740f0",
   "lastOpenFiles": [
-    "study-log.md",
+    "week-01/jerry/war_payload/ddpcwbqmrwlg.jsp",
+    "week-01/jerry/war_payload/revshell.war",
+    "week-01/jerry/war_payload/WEB-INF/web.xml",
+    "week-01/jerry/war_payload/WEB-INF",
+    "week-01/jerry/war_payload/META-INF/MANIFEST.MF",
+    "week-01/jerry/war_payload/META-INF",
+    "week-01/jerry/war_payload",
     "week-01/week-01-notes.md",
-    "plan of attack.md",
     "week-01/week-01-guide.md",
-    "week-01/lame/lame-report.md",
+    "plan of attack.md",
     "week-01/jerry/jerry-report.md",
-    "week-01/jerry/hduisoabng.jsp",
+    "week-01/jerry/ddpcwbqmrwlg.jsp",
     "week-01/jerry/WEB-INF/web.xml",
     "week-01/jerry/WEB-INF",
-    "week-01/jerry/AAAAAAAAAAA.war",
-    "week-01/jerry/jszlodgg.jsp",
-    "week-01/jerry/payload.war",
-    "week-01/jerry/cmd.jsp/cmd.war",
+    "week-01/jerry/META-INF/MANIFEST.MF",
+    "study-log.md",
+    "week-01/lame/lame-report.md",
     "htb-starting-point/08-synced/report.md",
-    "week-01/jerry/cmd.jsp/cmd_readable.jsp",
-    "week-01/jerry/cmd.jsp/cmd.jsp",
-    "week-01/jerry/cmd.jsp/a.js",
     "week-01/jerry/cmd.jsp/README.md",
     "week-01/jerry/warsend/README.md",
     "htb-starting-point/07-mongod/report.md",
