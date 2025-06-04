@@ -1,4 +1,4 @@
-Run an nmap scan of target
+Run an `nmap` scan of target
 
 ```php
 nmap -A -sV -Pn 10.129.136.9
@@ -7,7 +7,6 @@ nmap -A -sV -Pn 10.129.136.9
 |_http-favicon: Apache Tomcat
 |_http-title: Apache Tomcat/7.0.88
 |_http-server-header: Apache-Coyote/1.1
-
 ```
 
 Were interested in this Apache server that could be hosting some kind of app
@@ -26,7 +25,7 @@ Our points of interest
 
 We find a login prompt to authenticate, we have no credentials so lets first try some default ones and see what hits.
 
-```
+```php
 conf/tomcat-users.xml in your installation. That file must contain the credentials to let you use this webapp.
 ```
 

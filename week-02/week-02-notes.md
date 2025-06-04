@@ -97,3 +97,25 @@ User Admin: `993442d258b0e0ec917cae9e695d5713`
 Okay now that we have gone the metasploit route lets do manual exploit
 
 `MS08-067` Manual Exploit
+
+---
+
+# FTP / SSH Brute Force + File Transfer
+
+FTP (File Transfer Protocol) is used to transfer files between client and server
+Scans on Port 21
+Can be anonymous or credential based
+Can be active or passive, passive used for firewalls
+
+We can run commands like:
+- `get filename` - download file 
+- `put filename` - upload file
+- `ls` - list all files
+- `cd` - change directory
+- `bye` or `exit` - quit
+
+Were trying to find anonymous logins, looking for sensitive files, uploading malicious files, and escalating them to gain shell access. 
+
+Hydra is a login cracker tool, used for brute forcing usernames and passwords against a service like `FTP`, `SSH`, `HTTP`, and `RDP`.
+We provide it the target IP, wordlists for usernames and passwords, and a service. 
+Hydra will make several login attempts in rapid succession. 
