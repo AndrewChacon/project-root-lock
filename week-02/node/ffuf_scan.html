@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <title>FFUF Report - </title>
+
+    
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+	/>
+	<link 
+	  rel="stylesheet" 
+	  type="text/css" 
+	  href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css"
+	/>
+  
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">FFUF</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        </ul>
+      </div>
+    </nav>
+
+    <main class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br /><br />
+        <h1 class="header center ">FFUF Report</h1>
+        <div class="row center">
+
+		<pre>ffuf -u http://10.129.183.100:3000/FUZZ -w /home/drew/tools/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -of html -o ffuf_scan.html -fc 404,200</pre>
+		<pre>2025-06-04T12:54:29-04:00</pre>
+
+   <table id="ffufreport">
+        <thead>
+        <div style="display:none">
+|result_raw|StatusCode|FUZZ|Url|RedirectLocation|Position|ContentLength|ContentWords|ContentLines|ContentType|Duration|Resultfile|ScraperData|FfufHash|
+        </div>
+          <tr>
+              <th>Status</th>
+              <th>FUZZ</th>
+			  <th>URL</th>
+			  <th>Redirect location</th>
+              <th>Position</th>
+              <th>Length</th>
+              <th>Words</th>
+			  <th>Lines</th>
+			  <th>Type</th>
+              <th>Duration</th>
+			  <th>Resultfile</th>
+              <th>Scraper data</th>
+              <th>Ffuf Hash</th>
+          </tr>
+        </thead>
+
+        <tbody>
+			
+                <div style="display:none">
+|result_raw|301|uploads|http://10.129.183.100:3000/uploads|/uploads/|164|173|7|10|text/html; charset=UTF-8|81.590957ms|||aa84ea4|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>uploads</td>
+                    
+                    <td><a href="http://10.129.183.100:3000/uploads">http://10.129.183.100:3000/uploads</a></td>
+                    <td><a href="/uploads/">/uploads/</a></td>
+                    <td>164</td>
+                    <td>173</td>
+                    <td>7</td>
+					<td>10</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>81.590957ms</td>
+                    <td></td>
+					<td></td>
+					<td>aa84ea4</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|assets|http://10.129.183.100:3000/assets|/assets/|291|171|7|10|text/html; charset=UTF-8|87.72348ms|||aa84e123|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>assets</td>
+                    
+                    <td><a href="http://10.129.183.100:3000/assets">http://10.129.183.100:3000/assets</a></td>
+                    <td><a href="/assets/">/assets/</a></td>
+                    <td>291</td>
+                    <td>171</td>
+                    <td>7</td>
+					<td>10</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>87.72348ms</td>
+                    <td></td>
+					<td></td>
+					<td>aa84e123</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|vendor|http://10.129.183.100:3000/vendor|/vendor/|1481|171|7|10|text/html; charset=UTF-8|53.507134ms|||aa84e5c9|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>vendor</td>
+                    
+                    <td><a href="http://10.129.183.100:3000/vendor">http://10.129.183.100:3000/vendor</a></td>
+                    <td><a href="/vendor/">/vendor/</a></td>
+                    <td>1481</td>
+                    <td>171</td>
+                    <td>7</td>
+					<td>10</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>53.507134ms</td>
+                    <td></td>
+					<td></td>
+					<td>aa84e5c9</td>
+                </tr>
+            
+        </tbody>
+      </table>
+
+        </div>
+        <br /><br />
+      </div>
+    </main>
+
+    
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#ffufreport').DataTable(
+            {
+                "aLengthMenu": [
+                    [250, 500, 1000, 2500, -1],
+                    [250, 500, 1000, 2500, "All"]
+                ]
+            }
+        )
+        $('select').formSelect();
+        });
+    </script>
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+    </style>
+  </body>
+</html>
+
+	

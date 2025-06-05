@@ -1,0 +1,4 @@
+/music               [36m (Status: 301)[0m [Size: 312][34m [--> http://10.129.8.242/music/][0m
+/artwork             [36m (Status: 301)[0m [Size: 314][34m [--> http://10.129.8.242/artwork/][0m
+/sierra              [36m (Status: 301)[0m [Size: 313][34m [--> http://10.129.8.242/sierra/][0m
+/server-status       [33m (Status: 403)[0m [Size: 277]

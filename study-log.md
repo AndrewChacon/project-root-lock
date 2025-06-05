@@ -26,7 +26,7 @@ The actual research on SMB enumeration was very helpful and insightful, I think 
 There's also a connection on HTB called starting point that has starter boxes to hack, If I can start finishing a lot sooner I'd like to do this. 
 Extra practice would do be a lot of good.  
 
-## Thur 29 May 2025
+## Thu 29 May 2025
 Today was pretty light, after I submit all of this I'm gonna work on the HTB starting point.
 Doing this recon stuff was pretty cool, I found 2 vulnerabilities on the Lame machine. 
 The first one is for was `vsFTPd 2.3.4` and the other was `OpenSSH_4.7.p1`. 
@@ -56,3 +56,8 @@ Now were getting into some interesting stuff to play around with. I was able to 
 I downloaded files, found 5 files that might contain useful info for us later.
 I set up a reverse shell script and a web server to host it but it's looking like we don't have download permissions on this account so we can't upload our malicious script quite just yet. 
 
+## Wed 4 June 2025
+Not a good day at all, a lot confusing information that led to me wasting tons of time, I wasn't feeling well either so I kinda quit but I did put a lot of effort in. I want to revisit this on Sunday so ill do good to stay on track for the remaining week so I don't pile a ton of work on the last day of week 2. 
+
+## Thu 5 June 2025
+I'm feeling a lot better today, got my energy back. The work out helped a lot. Today was just revisiting Eternal Blue exploit on blue machine however this time I went the manual route instead of using metasploit to crack it. One of the most head turning things about this is, is the over abundance of information there is online. It can get pretty confusing as to what I need to know or how I should go about doing something. I got my daily goal met and since it didn't take too long ill take a shot at finishing tier 1 on the starting point section on Hack The Box.
