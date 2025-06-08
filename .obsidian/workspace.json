@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week-02/optimum/optimum-report.md",
+                "file": "week-02/legacy/legacy-report.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "optimum-report"
+              "title": "legacy-report"
             }
           },
           {
@@ -240,12 +240,13 @@
   },
   "active": "3a99f481e0eb78b6",
   "lastOpenFiles": [
+    "week-02/week-02-notes.md",
+    "week-02/legacy/legacy-report.md",
+    "week-02/optimum/optimum-report.md",
     "week-02/week-02-guide.md",
     "htb-starting-point/tier-1/01-appointment/report.md",
     "study-log.md",
     "week-02/blue/blue-report.md",
-    "week-02/week-02-notes.md",
-    "week-02/optimum/optimum-report.md",
     "week-02/optimum/nmap.txt",
     "plan of attack.md",
     "htb-starting-point/tier-1/01-appointment/gobuster.txt",
@@ -275,7 +276,6 @@
     "htb-starting-point/tier-1/04-responder/report.md",
     "htb-starting-point/tier-1/03-crocodile/report.md",
     "htb-starting-point/tier-1/02-sequel/report.md",
-    "htb-starting-point/tier-1/stuff (Copy 7)/report.md",
     "week-02/node/myplace_contents/var/www/myplace/static/vendor/font-awesome/fonts/fontawesome-webfont.svg",
     "week-02/node/myplace_contents/var/www/myplace/static/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg",
     "week-02/node/myplace_contents/var/www/myplace/static/uploads/tom.jpg",
