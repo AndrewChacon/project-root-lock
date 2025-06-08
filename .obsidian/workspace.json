@@ -91,7 +91,8 @@
               "title": "study-log"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -238,10 +239,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3a99f481e0eb78b6",
+  "active": "23b194d0d1988903",
   "lastOpenFiles": [
-    "week-02/week-02-notes.md",
     "week-02/legacy/legacy-report.md",
+    "week-02/week-02-notes.md",
     "week-02/optimum/optimum-report.md",
     "week-02/week-02-guide.md",
     "htb-starting-point/tier-1/01-appointment/report.md",

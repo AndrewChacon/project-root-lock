@@ -66,5 +66,11 @@ I'm feeling a lot better today, got my energy back. The work out helped a lot. T
 Since I rooted Legacy already my goal today should be to revisit Wednesday and try to root legacy manually without metasploit. If there's any more time left over i'll work on some tier 1 starting point machines. 
 
 ## Sat 7 June 2025
+Today I wasn't feeling very well. I have to root Optimum, almost finished but that's looking like Sunday's problem
 
 ## Sun 8 June 2025
+Today wasn't too bad. Legacy I already finished rooted a few days ago, I took all my work and formatted it into a document. I will say I tried the manual method and it just didn't work. I did finish Optimum today, it was pretty nice, this was the first HTB machine that required privilege escalation, I really don't want to use metasploit but most of these easy machines require it, I hope I can move onto medium level boxes real soon, for sure it has to be before I go on vacation. I have some extra time so ill tidy stuff up and work on some tier 1 starting points, maybe even finish it. 
+
+# Week 3
+
+## Mon 9 June 2025
