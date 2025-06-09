@@ -74,3 +74,4 @@ Today wasn't too bad. Legacy I already finished rooted a few days ago, I took al
 # Week 3
 
 ## Mon 9 June 2025
+Today was alright, i'm very interested in this week since its all about privildge escalation, I've done it before on some easy boxes but most of it is automated. Today I made my own little check list and i'm understanding what were looking for, why we are looking for it, and how we can use it to escalate. I practiced them commands and observing their outputs on the HTB lame machine however it'll sink in a lot better tomorrow when I apply that theory on labs. I'm most excited to learn about Linux and Windows escalation, I feel like it will be a SUPER big part in when I take the OSCP. I'll work on more starting points and review my checklist more today. 
