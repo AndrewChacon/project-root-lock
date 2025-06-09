@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week-02/blue/blue-report.md",
+                "file": "plan of attack.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "blue-report"
+              "title": "plan of attack"
             }
           },
           {
@@ -90,9 +90,23 @@
               "icon": "lucide-file",
               "title": "study-log"
             }
+          },
+          {
+            "id": "29121e6784e2b82b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "htb-starting-point/tier-1/03-crocodile/report.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "report"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -239,17 +253,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "23b194d0d1988903",
+  "active": "29121e6784e2b82b",
   "lastOpenFiles": [
+    "htb-starting-point/tier-1/03-crocodile/gobuster.txt",
+    "week-01/week-01-notes.md",
+    "htb-starting-point/tier-1/03-crocodile/report.md",
+    "plan of attack.md",
+    "full-report.md",
+    "week-02/blue/blue-report.md",
+    "htb-starting-point/tier-1/03-crocodile/allowed.userlist.passwd",
+    "htb-starting-point/tier-1/03-crocodile/allowed.userlist",
+    "htb-starting-point/tier-1/02-sequel/report.md",
+    "htb-starting-point/tier-1/03-crocodile/nmap.txt",
+    "htb-starting-point/tier-1/01-appointment/report.md",
+    "week-02/week-02-guide.md",
+    "htb-starting-point/tier-1/02-sequel/nmap.txt",
+    "study-log.md",
     "week-02/legacy/legacy-report.md",
     "week-02/week-02-notes.md",
     "week-02/optimum/optimum-report.md",
-    "week-02/week-02-guide.md",
-    "htb-starting-point/tier-1/01-appointment/report.md",
-    "study-log.md",
-    "week-02/blue/blue-report.md",
     "week-02/optimum/nmap.txt",
-    "plan of attack.md",
     "htb-starting-point/tier-1/01-appointment/gobuster.txt",
     "htb-starting-point/tier-1/01-appointment.md",
     "htb-starting-point/tier-1/01-appointment/nmap.txt",
@@ -260,23 +283,14 @@
     "htb-starting-point/tier-1/09-pennyworth/08-bike (Copy)",
     "htb-starting-point/tier-1/09-pennyworth",
     "htb-starting-point/tier-1/08-funnel/report.md",
-    "htb-starting-point/tier-1/08-funnel",
     "htb-starting-point/tier-1/10-pennyworth/report.md",
-    "htb-starting-point/tier-1/10-pennyworth",
     "htb-starting-point/tier-1/09-funnel/08-bike (Copy)/report.md",
     "htb-starting-point/tier-1/09-funnel/report.md",
-    "htb-starting-point/tier-1/09-funnel/08-bike (Copy)",
-    "htb-starting-point/tier-1/09-funnel",
     "htb-starting-point/tier-1/08-bike (Copy 2)/08-bike (Copy)/report.md",
     "htb-starting-point/tier-1/08-bike (Copy 2)/report.md",
     "htb-starting-point/tier-1/08-bike (Copy)/report.md",
     "htb-starting-point/tier-1/08-bike/report.md",
     "htb-starting-point/tier-1/07-bike/report.md",
-    "htb-starting-point/tier-1/06-ignition/report.md",
-    "htb-starting-point/tier-1/05-three/report.md",
-    "htb-starting-point/tier-1/04-responder/report.md",
-    "htb-starting-point/tier-1/03-crocodile/report.md",
-    "htb-starting-point/tier-1/02-sequel/report.md",
     "week-02/node/myplace_contents/var/www/myplace/static/vendor/font-awesome/fonts/fontawesome-webfont.svg",
     "week-02/node/myplace_contents/var/www/myplace/static/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg",
     "week-02/node/myplace_contents/var/www/myplace/static/uploads/tom.jpg",
