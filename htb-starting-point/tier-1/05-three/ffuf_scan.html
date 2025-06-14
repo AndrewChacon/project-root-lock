@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <title>FFUF Report - </title>
+
+    
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+	/>
+	<link 
+	  rel="stylesheet" 
+	  type="text/css" 
+	  href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css"
+	/>
+  
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">FFUF</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        </ul>
+      </div>
+    </nav>
+
+    <main class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br /><br />
+        <h1 class="header center ">FFUF Report</h1>
+        <div class="row center">
+
+		<pre>ffuf -u http://10.129.156.133/FUZZ -w /home/drew/tools/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -of html -o ffuf_scan.html -fc 404</pre>
+		<pre>2025-06-09T23:03:08-04:00</pre>
+
+   <table id="ffufreport">
+        <thead>
+        <div style="display:none">
+|result_raw|StatusCode|FUZZ|Url|RedirectLocation|Position|ContentLength|ContentWords|ContentLines|ContentType|Duration|Resultfile|ScraperData|FfufHash|
+        </div>
+          <tr>
+              <th>Status</th>
+              <th>FUZZ</th>
+			  <th>URL</th>
+			  <th>Redirect location</th>
+              <th>Position</th>
+              <th>Length</th>
+              <th>Words</th>
+			  <th>Lines</th>
+			  <th>Type</th>
+              <th>Duration</th>
+			  <th>Resultfile</th>
+              <th>Scraper data</th>
+              <th>Ffuf Hash</th>
+          </tr>
+        </thead>
+
+        <tbody>
+			
+                <div style="display:none">
+|result_raw|200|#|http://10.129.156.133/#||4|11952|1832|235|text/html; charset=UTF-8|52.464372ms|||54a3c4|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>#</td>
+                    
+                    <td><a href="http://10.129.156.133/#">http://10.129.156.133/#</a></td>
+                    <td><a href=""></a></td>
+                    <td>4</td>
+                    <td>11952</td>
+                    <td>1832</td>
+					<td>235</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>52.464372ms</td>
+                    <td></td>
+					<td></td>
+					<td>54a3c4</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|# license, visit http://creativecommons.org/licenses/by-sa/3.0/|http://10.129.156.133/# license, visit http://creativecommons.org/licenses/by-sa/3.0/||7|11952|1832|235|text/html; charset=UTF-8|43.996178ms|||54a3c7|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td># license, visit http://creativecommons.org/licenses/by-sa/3.0/</td>
+                    
+                    <td><a href="http://10.129.156.133/#%20license,%20visit%20http://creativecommons.org/licenses/by-sa/3.0/">http://10.129.156.133/# license, visit http://creativecommons.org/licenses/by-sa/3.0/</a></td>
+                    <td><a href=""></a></td>
+                    <td>7</td>
+                    <td>11952</td>
+                    <td>1832</td>
+					<td>235</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>43.996178ms</td>
+                    <td></td>
+					<td></td>
+					<td>54a3c7</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|#|http://10.129.156.133/#||10|11952|1832|235|text/html; charset=UTF-8|44.235418ms|||54a3ca|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>#</td>
+                    
+                    <td><a href="http://10.129.156.133/#">http://10.129.156.133/#</a></td>
+                    <td><a href=""></a></td>
+                    <td>10</td>
+                    <td>11952</td>
+                    <td>1832</td>
+					<td>235</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>44.235418ms</td>
+                    <td></td>
+					<td></td>
+					<td>54a3ca</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|# directory-list-2.3-medium.txt|http://10.129.156.133/# directory-list-2.3-medium.txt||1|11952|1832|235|text/html; charset=UTF-8|44.088047ms|||54a3c1|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td># directory-list-2.3-medium.txt</td>
+                    
+                    <td><a href="http://10.129.156.133/#%20directory-list-2.3-medium.txt">http://10.129.156.133/# directory-list-2.3-medium.txt</a></td>
+                    <td><a href=""></a></td>
+                    <td>1</td>
+                    <td>11952</td>
+                    <td>1832</td>
+					<td>235</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>44.088047ms</td>
+                    <td></td>
+					<td></td>
+					<td>54a3c1</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|#|http://10.129.156.133/#||13|11952|1832|235|text/html; charset=UTF-8|53.528847ms|||54a3cd|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>#</td>
+                    
+                    <td><a href="http://10.129.156.133/#">http://10.129.156.133/#</a></td>
+                    <td><a href=""></a></td>
+                    <td>13</td>
+                    <td>11952</td>
+                    <td>1832</td>
+					<td>235</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>53.528847ms</td>
+                    <td></td>
+					<td></td>
+					<td>54a3cd</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|images|http://10.129.156.133/images|http://10.129.156.133/images/|16|317|20|10|text/html; charset=iso-8859-1|44.223877ms|||54a3c10|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>images</td>
+                    
+                    <td><a href="http://10.129.156.133/images">http://10.129.156.133/images</a></td>
+                    <td><a href="http://10.129.156.133/images/">http://10.129.156.133/images/</a></td>
+                    <td>16</td>
+                    <td>317</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>44.223877ms</td>
+                    <td></td>
+					<td></td>
+					<td>54a3c10</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|# on at least 2 different hosts|http://10.129.156.133/# on at least 2 different hosts||12|11952|1832|235|text/html; charset=UTF-8|945.857215ms|||54a3cc|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td># on at least 2 different hosts</td>
+                    
+                    <td><a href="http://10.129.156.133/#%20on%20at%20least%202%20different%20hosts">http://10.129.156.133/# on at least 2 different hosts</a></td>
+                    <td><a href=""></a></td>
+                    <td>12</td>
+                    <td>11952</td>
+                    <td>1832</td>
+					<td>235</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>945.857215ms</td>
+                    <td></td>
+					<td></td>
+					<td>54a3cc</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|# Suite 300, San Francisco, California, 94105, USA.|http://10.129.156.133/# Suite 300, San Francisco, California, 94105, USA.||9|11952|1832|235|text/html; charset=UTF-8|1.967877542s|||54a3c9|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td># Suite 300, San Francisco, California, 94105, USA.</td>
+                    
+                    <td><a href="http://10.129.156.133/#%20Suite%20300,%20San%20Francisco,%20California,%2094105,%20USA.">http://10.129.156.133/# Suite 300, San Francisco, California, 94105, USA.</a></td>
+                    <td><a href=""></a></td>
+                    <td>9</td>
+                    <td>11952</td>
+                    <td>1832</td>
+					<td>235</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>1.967877542s</td>
+                    <td></td>
+					<td></td>
+					<td>54a3c9</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|# Copyright 2007 James Fisher|http://10.129.156.133/# Copyright 2007 James Fisher||3|11952|1832|235|text/html; charset=UTF-8|1.967961005s|||54a3c3|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td># Copyright 2007 James Fisher</td>
+                    
+                    <td><a href="http://10.129.156.133/#%20Copyright%202007%20James%20Fisher">http://10.129.156.133/# Copyright 2007 James Fisher</a></td>
+                    <td><a href=""></a></td>
+                    <td>3</td>
+                    <td>11952</td>
+                    <td>1832</td>
+					<td>235</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>1.967961005s</td>
+                    <td></td>
+					<td></td>
+					<td>54a3c3</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|#|http://10.129.156.133/#||2|11952|1832|235|text/html; charset=UTF-8|2.861678734s|||54a3c2|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>#</td>
+                    
+                    <td><a href="http://10.129.156.133/#">http://10.129.156.133/#</a></td>
+                    <td><a href=""></a></td>
+                    <td>2</td>
+                    <td>11952</td>
+                    <td>1832</td>
+					<td>235</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>2.861678734s</td>
+                    <td></td>
+					<td></td>
+					<td>54a3c2</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|# This work is licensed under the Creative Commons|http://10.129.156.133/# This work is licensed under the Creative Commons||5|11952|1832|235|text/html; charset=UTF-8|2.84885233s|||54a3c5|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td># This work is licensed under the Creative Commons</td>
+                    
+                    <td><a href="http://10.129.156.133/#%20This%20work%20is%20licensed%20under%20the%20Creative%20Commons">http://10.129.156.133/# This work is licensed under the Creative Commons</a></td>
+                    <td><a href=""></a></td>
+                    <td>5</td>
+                    <td>11952</td>
+                    <td>1832</td>
+					<td>235</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>2.84885233s</td>
+                    <td></td>
+					<td></td>
+					<td>54a3c5</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|# or send a letter to Creative Commons, 171 Second Street,|http://10.129.156.133/# or send a letter to Creative Commons, 171 Second Street,||8|11952|1832|235|text/html; charset=UTF-8|2.876282177s|||54a3c8|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td># or send a letter to Creative Commons, 171 Second Street,</td>
+                    
+                    <td><a href="http://10.129.156.133/#%20or%20send%20a%20letter%20to%20Creative%20Commons,%20171%20Second%20Street,">http://10.129.156.133/# or send a letter to Creative Commons, 171 Second Street,</a></td>
+                    <td><a href=""></a></td>
+                    <td>8</td>
+                    <td>11952</td>
+                    <td>1832</td>
+					<td>235</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>2.876282177s</td>
+                    <td></td>
+					<td></td>
+					<td>54a3c8</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200||http://10.129.156.133/||14|11952|1832|235|text/html; charset=UTF-8|2.941612894s|||54a3ce|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td></td>
+                    
+                    <td><a href="http://10.129.156.133/">http://10.129.156.133/</a></td>
+                    <td><a href=""></a></td>
+                    <td>14</td>
+                    <td>11952</td>
+                    <td>1832</td>
+					<td>235</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>2.941612894s</td>
+                    <td></td>
+					<td></td>
+					<td>54a3ce</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|# Attribution-Share Alike 3.0 License. To view a copy of this|http://10.129.156.133/# Attribution-Share Alike 3.0 License. To view a copy of this||6|11952|1832|235|text/html; charset=UTF-8|2.941461906s|||54a3c6|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td># Attribution-Share Alike 3.0 License. To view a copy of this</td>
+                    
+                    <td><a href="http://10.129.156.133/#%20Attribution-Share%20Alike%203.0%20License.%20To%20view%20a%20copy%20of%20this">http://10.129.156.133/# Attribution-Share Alike 3.0 License. To view a copy of this</a></td>
+                    <td><a href=""></a></td>
+                    <td>6</td>
+                    <td>11952</td>
+                    <td>1832</td>
+					<td>235</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>2.941461906s</td>
+                    <td></td>
+					<td></td>
+					<td>54a3c6</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|# Priority ordered case-sensitive list, where entries were found|http://10.129.156.133/# Priority ordered case-sensitive list, where entries were found||11|11952|1832|235|text/html; charset=UTF-8|4.945150887s|||54a3cb|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td># Priority ordered case-sensitive list, where entries were found</td>
+                    
+                    <td><a href="http://10.129.156.133/#%20Priority%20ordered%20case-sensitive%20list,%20where%20entries%20were%20found">http://10.129.156.133/# Priority ordered case-sensitive list, where entries were found</a></td>
+                    <td><a href=""></a></td>
+                    <td>11</td>
+                    <td>11952</td>
+                    <td>1832</td>
+					<td>235</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>4.945150887s</td>
+                    <td></td>
+					<td></td>
+					<td>54a3cb</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200||http://10.129.156.133/||45240|11952|1832|235|text/html; charset=UTF-8|38.72844ms|||54a3cb0b8|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td></td>
+                    
+                    <td><a href="http://10.129.156.133/">http://10.129.156.133/</a></td>
+                    <td><a href=""></a></td>
+                    <td>45240</td>
+                    <td>11952</td>
+                    <td>1832</td>
+					<td>235</td>
+					<td>text/html; charset=UTF-8</td>
+					<td>38.72844ms</td>
+                    <td></td>
+					<td></td>
+					<td>54a3cb0b8</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|server-status|http://10.129.156.133/server-status||95524|279|20|10|text/html; charset=iso-8859-1|25.535271ms|||54a3c17524|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>server-status</td>
+                    
+                    <td><a href="http://10.129.156.133/server-status">http://10.129.156.133/server-status</a></td>
+                    <td><a href=""></a></td>
+                    <td>95524</td>
+                    <td>279</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>25.535271ms</td>
+                    <td></td>
+					<td></td>
+					<td>54a3c17524</td>
+                </tr>
+            
+        </tbody>
+      </table>
+
+        </div>
+        <br /><br />
+      </div>
+    </main>
+
+    
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#ffufreport').DataTable(
+            {
+                "aLengthMenu": [
+                    [250, 500, 1000, 2500, -1],
+                    [250, 500, 1000, 2500, "All"]
+                ]
+            }
+        )
+        $('select').formSelect();
+        });
+    </script>
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+    </style>
+  </body>
+</html>
+
+	

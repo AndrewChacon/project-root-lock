@@ -99,7 +99,7 @@ find / -type f -writable -exec ls -l {} \; 2>/dev/null | grep cron
 #### 🔧 Tasks:
 - Run:
 
-```bash
+```
 ./linpeas.sh > linpeas-output.txt`
 ```
 
